@@ -38,10 +38,12 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
 2.	Mixed effects/hierarchical models Part II: analyses
     -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
+    -	[Video](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
 3.	An introduction to regression in a Bayesian framework
     -	Instructor: Sam Bashevkin (DSC; sam.bashevkin@deltacouncil.ca.gov)
+    -	[Video](https://drive.google.com/file/d/19DVpW2BCdrYkoey8gjyi7kXWbYJz7nOS/view?usp=sharing)
 
 
 
 
-- Click [here](quora.com/profile/Ashish-Kulkarni-100)
+
