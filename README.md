@@ -36,9 +36,9 @@ Overall, we hope this workshop will provide tools that can help attendees promot
 
 1.	Mixed effects/hierarchical models Part I: theory
     -	Instructor: Jereme Gaeta (IEP & CDFW)
-2.	Mixed effects/hierarchical models Part II: analyses [Video presentation](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
+2.	Mixed effects/hierarchical models Part II: analyses - [recorded presentation](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
-3.	An introduction to regression in a Bayesian framework [Video presentation](https://drive.google.com/file/d/19DVpW2BCdrYkoey8gjyi7kXWbYJz7nOS/view?usp=sharing)
+3.	An introduction to regression in a Bayesian framework - [recorded presentation](https://drive.google.com/file/d/19DVpW2BCdrYkoey8gjyi7kXWbYJz7nOS/view?usp=sharing)
     -	Instructor: Sam Bashevkin (DSC) 
 
 
