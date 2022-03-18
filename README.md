@@ -29,12 +29,12 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Rosie Hartman (DWR)
 4.	Zero-inflated negative binomial or Poisson regression
     -	Instructor: Rosie Hartman (DWR)
-5.	Non-linear data: generalized additive models
+5.	Non-linear data: generalized additive models - [recorded presentation](https://drive.google.com/file/d/1J7EezsCIM-mNyQNlvJFyhUVmzAkGAYpx/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
 
 ## Session 3: Advanced Analytical Topics in R (Moderator: Jereme Gaeta)
 
-1.	Mixed effects/hierarchical models Part I: theory
+1.	Mixed effects/hierarchical models Part I: theory - [recorded presentation](https://drive.google.com/file/d/1feqtQfnZtkwUFuE1dmrGbxAqOv7faNkb/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
 2.	Mixed effects/hierarchical models Part II: analyses - [recorded presentation](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
