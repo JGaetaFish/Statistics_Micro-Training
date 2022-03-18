@@ -20,7 +20,7 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Timothy Malinich (CDFW)
 ## Session 2: Regression in R (Moderator: Jereme Gaeta)
 
-1.	Simple linear regression
+1.	Simple linear regression - [recorded presentation](https://drive.google.com/file/d/1x2LkDiLBWV5wdnwDGotZ1sB_dmq_ACTk/view?usp=sharing)
     -	Instructor: Braden Elliot (SWRCB)
 2.	Logistic regression - [recorded presentation](https://drive.google.com/file/d/1oom2NnrZYsV2Dleq4D9FQc-Y-T9OEX9t/view?usp=sharing)
     -	Instructor: Tyler Pilger (FishBio)
