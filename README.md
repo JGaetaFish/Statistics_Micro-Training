@@ -10,24 +10,24 @@ Overall, we hope this workshop will provide tools that can help attendees promot
 
 1.	Overview: Workshop plan, a general modeling approach, and a framework for univariate analyses
     -	Instructor: Jereme Gaeta (IEP & CDFW)
-2.	Data Exploration: outliers, collinearity and correlations, zero-inflation, and distributions
+2.	Data Exploration - [recorded presentation](https://drive.google.com/file/d/1-mXVdy8CU1Rknq7KcXMk1zXgJbowlyeS/view?usp=sharing)
     -	Instructor: Catarina Pien (DWR)
-3.	Categorical Predictors: ANOVA and Kruskal-Wallis with multiple comparison tests 
+3.	Categorical Predictors: ANOVA and Kruskal-Wallis with multiple comparison tests - [recorded presentation](https://drive.google.com/file/d/1kVMM7uMqT_ly8armgCvulAnruRhn8ONk/view?usp=sharing)
     -	Instructor: Emily Ryznar (DSC)
-4.	Categorical Response: Classification Trees
+4.	Categorical Response: Classification Trees - [recorded presentation](https://drive.google.com/file/d/1J8s0q6EnVmabT5WHDcj3Lov-DKycuU2E/view?usp=sharing)
     -	Instructor: Trinh Nguyen (IEP, CDFW)
-5.	Multivariate statistics: an introduction to ordination
+5.	Multivariate statistics: an introduction to ordination - [recorded presentation](https://drive.google.com/file/d/1q5AFIzyu3rBpuCFSlaLXQ2cIR9x-r3lx/view?usp=sharing)
     -	Instructor: Timothy Malinich (CDFW)
     -	
 ## Session 2: Regression in R (Moderator: Jereme Gaeta)
 
-1.	Continuous response and predictor: simple linear regression
+1.	Simple linear regression
     -	Instructor: Braden Elliot (SWRCB)
-2.	Two category, binary, or proportional response: logistic regression 
+2.	Logistic regression - [recorded presentation](https://drive.google.com/file/d/1oom2NnrZYsV2Dleq4D9FQc-Y-T9OEX9t/view?usp=sharing)
     -	Instructor: Tyler Pilger (FishBio)
-3.	Discrete catch data: Negative binomial or Poisson regression
+3.	Discrete catch data: Negative binomial regression - [recorded presentation](https://drive.google.com/file/d/1JEbEieVfAr6uvVdpS_M65zxdNi2jj7SK/view?usp=sharing)
     -	Instructor: Rosie Hartman (DWR)
-4.	Zero-inflated negative binomial or Poisson regression
+4.	Zero-inflated negative binomial regression - [recorded presentation](https://drive.google.com/file/d/1T0LQ7VuQfQkoyaQjc_lKSeOzvtrrVyjj/view?usp=sharing)
     -	Instructor: Rosie Hartman (DWR)
 5.	Non-linear data: generalized additive models - [recorded presentation](https://drive.google.com/file/d/1J7EezsCIM-mNyQNlvJFyhUVmzAkGAYpx/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
