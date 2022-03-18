@@ -18,7 +18,6 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Trinh Nguyen (IEP, CDFW)
 5.	Multivariate statistics: an introduction to ordination - [recorded presentation](https://drive.google.com/file/d/1q5AFIzyu3rBpuCFSlaLXQ2cIR9x-r3lx/view?usp=sharing)
     -	Instructor: Timothy Malinich (CDFW)
-    -	
 ## Session 2: Regression in R (Moderator: Jereme Gaeta)
 
 1.	Simple linear regression
