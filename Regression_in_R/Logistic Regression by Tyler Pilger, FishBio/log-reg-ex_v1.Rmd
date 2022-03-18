@@ -1,0 +1,254 @@
+---
+title: 'Binary or Proportional Data: Logistic Regression'
+author: "Tyler Pilger and Matt Peterson"
+date: "3/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Reference Material
+
+Chapters 16 and 17 of Crawley (2007) are useful for implementing logistic regression. Useful and readable description of the theory behind this can be found in chapter 6 of Zuur et al. (2007) and chapter 10 of Zuur et al. (2009.)
+
+## Background
+
+**Binary response variables may include:**  
+  -Dead or alive  
+  -Occupied or empty  
+  -Healthy or diseased  
+  -Female or male  
+
+**Proportional response variables may include:**  
+  -Percentage mortality  
+  -Proportion of sites occupied  
+  -Infection rates of diseases  
+  -Sex ratios
+
+Binary responses are either 1 or 0 and proportional responses can range from 0 to 1. Therefore we need
+to model probabilities as a function of some set of explanatory variables. ${P}_{i}$ is then the probability
+of a 1 while $1-{P}_{i}$ is the probability of a 0. 
+
+A link function is used to transform the response variable so that it can take on values outside the range of 0 and 1. For logistic regression, the most frequently used link function is the logit link. This transforms a probability to the odds ratio or log odds scale that can take on negative and positive values. The link function is $ln(O_{i}) = ln(P_{i}/[1-P_{i}]) = g(x_{i})$. The linear function, $g(x_{i}) = a + b_{1}x_{1i} + ... + b_{k}x_{ki}$ models the probability using k explanatory variables. 
+
+## The Analysis
+
+No special packages are needed to run a logistic regression because it is performed using the glm function in the stats package and is automatically loaded when starting R. However, you can load your packages of choice for data wrangling and plotting. Here we use dplyr and ggplot2.
+
+```{r packages, message=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+## Case Study Data
+
+We are using data from the Delta Juvenile Fish Monitoring Program which is available from the [EDI Data Portal](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=244) (IEP et al. 2021). This program uses a combination of trawls and beach seining to monitor juvenile Chinook salmon migrating through the San Francisco Estuary. Data collected from this is also used to monitor native fishes such as the Sacramento splittail and detection and spread of nonnative species. For this microtraining session, we used the beach seine data collected from 2001 to 2010 specifically focusing on catch of Sacramento splittail. Owing to the number of records and columns in the dataset, we have opted to do some pre-wrangling to get the data into a format for this training. 
+
+```{r data_input}
+## Load data
+# Splittail (Pogonichthys macrolepidotus) records from the Delta Juvenile Fish Monitoring Program (USFWS)
+# at all stations during the years 2001 to 2010.
+splt <- readRDS(file = 'DJFMP_seine_2001-2010_splt.rds')
+head(splt)
+```
+
+This file includes:  
+  *Year* - the year the survey was performed  
+  *Month* - the numeric month the survey was performed  
+  *StationCode* - a code indicating which station was surveyed, see additional metadata at the EDI portal site  
+  *Count* - count of the number of individuals collected during the survey  
+  *Wtemp* - water temperature in C measured during the survey 
+  
+## Study Question
+
+In this microtraining session, we ask two questions **"does the probability of splittail occurring at a site depend on water temperature?"** and **"does the proportion of sites where splittail are present change with temperature?"** Splittail spawn in the spring as water temperatures rise, so a reasonable hypothesis is that both the **probability** and **proportion** of stations where splittail are present should increase with temperature. Let's look at the raw data.
+
+```{r raw_data, warning=FALSE}
+# First filter to only include late-winter/spring months, Feb-June
+splt <- filter(splt, Month %in% c(2:6))
+
+# Plot the numbers of splittail caught against water temperature
+ggplot(splt, aes(Wtemp, Count)) +
+  geom_point()
+```
+
+At least it looks like the numbers of splittail captured increases somewhat with temperature but it's messy. Let's look at presence-absence in relation to water temperature
+
+```{r PA_setup, warning=FALSE}
+# Create vector for presence/absence
+splt$PA <- ifelse(splt$Count>0, 1, 0)
+
+# Plot presence/absence data
+ggplot(splt, aes(Wtemp, PA)) +
+  geom_point() +
+  labs(x='Water Temperature (C)', y='Presence-Absence')
+```
+
+It does sort of look like stations have a better chance of seeing a splittail at warmer water temperatures but this is still hard to see. So let's take a look at the proportion of stations where splittail are present. Because water temperature measurements were taken at each station, we also need to calculate the mean temperature across all stations surveyed in a given month.
+
+```{r prop_setup, message=FALSE}
+# Create new dataset with proportion of stations present during each month of each year and the mean
+# water temperature measured across stations
+splt.prop <- group_by(splt, Year, Month) %>%
+  summarise(., n = length(unique(StationCode)),
+            nPres = length(unique(StationCode[which(PA==1)])),
+            mnTemp = mean(Wtemp, na.rm=T)) %>%
+  mutate(., propPres=nPres/n)
+
+# Plot the proportion of sites that splittail were present against mean water temperature
+ggplot(splt.prop, aes(mnTemp, propPres)) +
+  geom_point() +
+  labs(x='Mean Water Temperature (C)', y='Proportion of Stations with Splittail')
+```
+
+Now this is really starting to look like our hypothesis might be supported. To formally test, we can model these two data sets, presence-absence and proportions using the logistic regression.
+
+## Fitting the Models
+
+### Presence-Absence Data
+
+The string of 0s and 1s for each station in each month and year can be considered independent observations such that we are estimating the probability of a station being a 1. Technically there may be some temporal autocorrelation, meaning that stations sampled in the same month might have correlated probabilities, but we will ignore this for now.  
+Use the glm() function to fit the model. PA is the vector of presence-absences coded as 1 and 0. The next most important argument is to specify the family. This tells the glm function what error distribution (binomial) and link function (logit) to use.
+
+```{r PA_fit}
+mod1 <- glm( PA ~ Wtemp, data = splt, family = 'binomial')
+summary(mod1)
+```
+
+Use the summary() function to view the results of the model fitting. The coefficients are not much different from those of a linear regression. In this case both the intercept and slope for Wtemp are highly significant. The effect of water temperature on the probability of getting a 1 is positive. We can plot the predicted values to visualize the relationship. As previously mentioned, setting the automatically sets the link function to logit. Which means if we use the predict() function to estimate values using the model coeficients, those values will be on the log odds scale. To get the estimated values on the probability scale (0-1) we can set the type argument to "response". See ?predict.glm for help. 
+
+```{r PA_plot, warning=FALSE}
+# Set up a dataframe for predicted values
+range(splt$Wtemp, na.rm=T)
+newdat <- data.frame(Wtemp = seq(7, 28, length.out=50))
+
+PredPA <- predict(mod1, newdata = newdat, type = 'response', se.fit = T)
+
+newdat$PredPA <- PredPA$fit
+newdat$PredPA.se <- PredPA$se.fit
+
+# Plot predicted probability of splittail being present at a site as a function of water temperature 
+ggplot(splt, aes(Wtemp, PA)) + 
+  geom_point() +
+  geom_line(data = newdat, aes(Wtemp, PredPA), size = 1.5) +
+  geom_line(data = newdat, aes(Wtemp, PredPA + PredPA.se*1.96), size = .75, color='grey') +
+  geom_line(data = newdat, aes(Wtemp, PredPA - PredPA.se*1.96), size = .75, color='grey') +
+  labs(x='Water Temperature (C)', y='P(Presence)')
+```
+
+From this graph we can see that according the model results, the probability of splittail being present at a station does increase with water temperature. But this plot does not show how well the model is performing. To look at this, we could use the plot() function on the mod1 object to get standard diagnostic plots, but these look weir because the 1s are clustered separetly from the 0s. You can try it out if you want.  
+One option is to cut the data into some number of sections and plot the mean emperical probabilities for each section. The closer these points fall to the line, the better the fit of the logistic model to the data. This is a somewhat arbitrary approach depending on where the boundaries are set for the cut and different number of samples within each section. 
+
+
+```{r PA_eval}
+# Graphical test for fit of the model
+cutT <- cut(splt$Wtemp, 5)
+tapply(splt$PA, cutT, sum)
+table(cutT) # notice the large discrepancy in number of samples per temperature group.
+
+# empirical probabilities of the means
+probs <- tapply(splt$PA, cutT, sum) / table(cutT)
+tempMeans <- tapply(splt$Wtemp, cutT, mean)
+
+# Calculate standard error of the binomial proportions
+se <- sqrt(probs * (1-probs)/table(cutT))
+
+probMeans <- data.frame(Wtemp = as.vector(tempMeans),
+                        probs = as.vector(probs),
+                        se = as.vector(se))
+# Use geom_rug to display where the 0s are on the bottom and 1s are on the top
+ggplot(splt, aes(Wtemp, PA)) + 
+  geom_rug(data = splt[splt$PA==0,], sides = 'b') +
+  geom_rug(data = splt[splt$PA==1,], sides = 't') +
+  geom_line(data = newdat, aes(Wtemp, PredPA), size = 1.5) +
+  geom_line(data = newdat, aes(Wtemp, PredPA + PredPA.se*1.96), size = .75, color='grey') +
+  geom_line(data = newdat, aes(Wtemp, PredPA - PredPA.se*1.96), size = .75, color='grey') +
+  geom_errorbar(data = probMeans, aes(Wtemp, ymin=probs-se, ymax=probs+se), width=.2, inherit.aes = F) +
+  geom_point(data = probMeans, aes(Wtemp, probs), size = 2, inherit.aes = F) +
+  labs(x='Water Temperature (C)', y='P(Presence)')
+```
+
+As you can see, there is something to be desired in the fit of this model to the data. Few data points at the extreme ends leads to poor fit, but the model does OK between 12 and 23 degrees.
+
+### Proportional Data
+
+Another way to analyse these data are to group stations according to the year and month they were sampled and look at the proportion of stations where splittail were present. Here we can think of the number of stations sampled as a series of Bernoulli trials. For example, if 10 stations were sampled and splittail were detected in 5 of them, then the probability of a site having a splittail is 0.5.  
+There are actually two different ways to represent the reponse variable. One using the proportion of sites with splittail, or a second by pairing the number of successes (present) to failures (absent). Again, we use the glm function with family set to binomial. If opting to use proportions as the response, then you will need to include the weight argument that tells how many trials were performed, or in this case, how many stations were sampled.
+
+```{r prop_fit}
+# response variable is proportion of sites where present, 
+mod2 <- glm( propPres ~ mnTemp, data = splt.prop, family = 'binomial', weights = n)
+summary(mod2)
+
+# response variable is successes (present) and failures (absent
+splt.prop$nAbs <- splt.prop$n-splt.prop$nPres
+mod3 <- glm(cbind(nPres,nAbs) ~ mnTemp, data = splt.prop, family = 'binomial')
+summary(mod3)
+```
+
+Results of the summary() function show that these two models are identical. Again, both coefficients are highly significant and there is a positive relationship between proportion of sites with splittail and water temperature.  
+However, there is one thing to be concerned about and that is overdispersion. Notice that the residual deviance is much greater than the residual degrees of freedom (368 to 48). See Chapter 6 of Zuur et al. 2007 for more information on overdispersion. To get around this, we can rerun the model setting the family argument to quasibinomial. The link function is still logit but the quasibinomial allows for the dispersion parameter to vary.
+
+```{r prop_fit2}
+# using the quasibinomial to account for overdispersion
+mod4 <- glm(cbind(nPres,nAbs) ~ mnTemp, data = splt.prop, family = 'quasibinomial')
+summary(mod4)
+```
+
+The model coefficients are the same but now the dispersion parameter is 7.4 instead of 1.0 with the binomial models.  
+Next we visualize the results and see that the predicted proportions fall well with the observed data.
+
+```{r prop_plot}
+# Get predicted probabilities from the model
+range(splt.prop$mnTemp) # find range of mean water temperature
+newdat <- data.frame(mnTemp = seq(10, 22, length.out=50))
+
+PredPA <- predict(mod4, newdata = newdat, type = 'response', se.fit = T)
+
+newdat$PredPA <- PredPA$fit
+newdat$PredPA.se <- PredPA$se.fit
+
+# Plot predicted and observed
+ggplot(splt.prop, aes(mnTemp, propPres)) +
+  geom_point() +
+  geom_line(data = newdat, aes(mnTemp, PredPA), size = 1.5) +
+  geom_line(data = newdat, aes(mnTemp, PredPA + PredPA.se*1.96), size = .75, color='grey') +
+  geom_line(data = newdat, aes(mnTemp, PredPA - PredPA.se*1.96), size = .75, color='grey') +
+  labs(x='Mean Water Temperature (C)', y='Proportion of Stations with Splittail')
+```
+
+We can use the plot() function to get diagnostic plots to assess the performance of the model
+
+```{r prop_eval}
+# Graphical test for fit of the model
+op <- par(mfrow=c(2,2))
+plot(mod4, ask = F)
+par(op)
+```
+
+Again, the fit of this model is not great as there is some patterning in residuals versus fitted values plot. This indicates that additional explanatory variables may be needed to improve how the model fits to the data.
+
+## Final Model Presentation
+
+At the very minimum, you should present the coefficient estimates with standard errors. P-values from the quasibinomial family are approximate so care should be taken if they are close to cutoff values. Visualization of the predicted curve should include uncertainty. Notice that we included grey lines showing the 95% confidence intervals for each model. In the presence-absence model above, we used rugs (geom_rug) to show the density of 1s and 0s separately on the top and bottom axes, respectively. This can be more visually appealing than including the points.
+
+## Additional Considerations
+
+The example here assumes perfect detection, meaning that if any splittail were present during the survey, at least one was captured. In reality, detection is probably less than 100% in which case the estimated probabilities will be biased. Occupancy models that account for this could be ran if the survey design is compatible with these types of models.
+
+The example here included a single explanatory variable. In most cases, there will be multiple explanatory variables and you will need to figure out what the best or most supported model is. There are several options for identifying the most important variables that can be forward or backward selection. It is also possible to construct different models according to some a priori hypotheses. AIC model selection can be used compare competing models and even use model averaging for multi-model inference. The reference books can provide more information on options as this is beyond the scope of this micro-training.
+
+Another point to watch out for is that logistic regression can be sensitive to probabilities near 0 or 1. This is an issue related to testing on the boundaries. We encourage you to look this up if you are having issues running logistic regressions and your probabilities are really small or really high.
+
+## Literature Cited
+
+Crawley, M. J. 2007. The R Book. Wiley and Sons  
+
+Interagency Ecological Program (IEP), R. McKenzie, J. Speegle, A. Nanninga, J.R. Cook, and J. Hagen. 2021. Interagency Ecological Program: Over four decades of juvenile fish monitoring data from the San Francisco Estuary, collected by the Delta Juvenile Fish Monitoring Program, 1976-2021 ver 8. Environmental Data Initiative. https://doi.org/10.6073/pasta/8dfe5eac4ecf157b7b91ced772aa214a (Accessed 2022-03-09).  
+
+Zuur A. F., E. N. Ieno, and G. M. Smith. 2007. Analysing Ecological Data. Springer  
+
+Zuur A. F., E. N. Ieno, N. J. Walker, A. A. Saveliev, and G. M. Smith. 2009. Mixed Effects Models and Extensions in Ecology with R. Springer.
