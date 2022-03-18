@@ -9,37 +9,37 @@ Overall, we hope this workshop will provide tools that can help attendees promot
 ## Session 1: Basic Statistics in R (Moderator: Jereme Gaeta)
 
 1.	Overview: Workshop plan, a general modeling approach, and a framework for univariate analyses
-    -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
+    -	Instructor: Jereme Gaeta (IEP & CDFW)
 2.	Data Exploration: outliers, collinearity and correlations, zero-inflation, and distributions
-    -	Instructor: Catarina Pien (DWR; catarina.pien@water.ca.gov)
+    -	Instructor: Catarina Pien (DWR)
 3.	Categorical Predictors: ANOVA and Kruskal-Wallis with multiple comparison tests 
-    -	Instructor: Emily Ryznar (DSC; emily.ryznar@deltacouncil.ca.gov)
+    -	Instructor: Emily Ryznar (DSC)
 4.	Categorical Response: Classification Trees
-    -	Instructor: Trinh Nguyen (IEP, CDFW; trinh.nguyen@wildlife.ca.gov)
+    -	Instructor: Trinh Nguyen (IEP, CDFW)
 5.	Multivariate statistics: an introduction to ordination
-    -	Instructor: Timothy Malinich (CDFW; timothy.malinich@wildlife.ca.gov)
+    -	Instructor: Timothy Malinich (CDFW)
     -	
 ## Session 2: Regression in R (Moderator: Jereme Gaeta)
 
 1.	Continuous response and predictor: simple linear regression
-    -	Instructor: Braden Elliot (SWRCB; braden.elliott@waterboards.ca.gov)
+    -	Instructor: Braden Elliot (SWRCB)
 2.	Two category, binary, or proportional response: logistic regression 
-    -	Instructor: Tyler Pilger (FishBio; tylerpilger@fishbio.com)
+    -	Instructor: Tyler Pilger (FishBio)
 3.	Discrete catch data: Negative binomial or Poisson regression
-    -	Instructor: Rosie Hartman (DWR; rosemary.hartman@water.ca.gov)
+    -	Instructor: Rosie Hartman (DWR)
 4.	Zero-inflated negative binomial or Poisson regression
-    -	Instructor: Rosie Hartman (DWR; rosemary.hartman@water.ca.gov)
+    -	Instructor: Rosie Hartman (DWR)
 5.	Non-linear data: generalized additive models
-    -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
+    -	Instructor: Jereme Gaeta (IEP & CDFW)
 
 ## Session 3: Advanced Analytical Topics in R (Moderator: Jereme Gaeta)
 
 1.	Mixed effects/hierarchical models Part I: theory
-    -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
-2.	Mixed effects/hierarchical models Part II: analyses [Video](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
-    -	Instructor: Jereme Gaeta (IEP & CDFW; jereme.gaeta@wildlife.ca.gov)
-3.	An introduction to regression in a Bayesian framework [Video](https://drive.google.com/file/d/19DVpW2BCdrYkoey8gjyi7kXWbYJz7nOS/view?usp=sharing)
-    -	Instructor: Sam Bashevkin (DSC; sam.bashevkin@deltacouncil.ca.gov) 
+    -	Instructor: Jereme Gaeta (IEP & CDFW)
+2.	Mixed effects/hierarchical models Part II: analyses [Video presentation](https://drive.google.com/file/d/13hQtN_kJODJ6qYLk6O3jllJLA75J-UVh/view?usp=sharing)
+    -	Instructor: Jereme Gaeta (IEP & CDFW)
+3.	An introduction to regression in a Bayesian framework [Video presentation](https://drive.google.com/file/d/19DVpW2BCdrYkoey8gjyi7kXWbYJz7nOS/view?usp=sharing)
+    -	Instructor: Sam Bashevkin (DSC) 
 
 
 
