@@ -28,7 +28,7 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Rosie Hartman (DWR)
 4.	Zero-inflated negative binomial regression - [recorded presentation](https://drive.google.com/file/d/1T0LQ7VuQfQkoyaQjc_lKSeOzvtrrVyjj/view?usp=sharing)
     -	Instructor: Rosie Hartman (DWR)
-5.	Non-linear data: generalized additive models - [recorded presentation](https://drive.google.com/file/d/1J7EezsCIM-mNyQNlvJFyhUVmzAkGAYpx/view?usp=sharing)
+5.	Non-linear data: generalized additive models - [recorded presentation](https://drive.google.com/file/d/1f6WDd9jJcBIg6A5isNvPuj-XRWzJXJ5j/view?usp=sharing)
     -	Instructor: Jereme Gaeta (IEP & CDFW)
 
 ## Session 3: Advanced Analytical Topics in R (Moderator: Jereme Gaeta)
