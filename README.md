@@ -24,7 +24,7 @@ Overall, we hope this workshop will provide tools that can help attendees promot
     -	Instructor: Braden Elliot (SWRCB)
 2.	Logistic regression - [recorded presentation](https://drive.google.com/file/d/1oom2NnrZYsV2Dleq4D9FQc-Y-T9OEX9t/view?usp=sharing)
     -	Instructor: Tyler Pilger (FishBio)
-3.	Discrete catch data: Negative binomial regression - [recorded presentation](https://drive.google.com/file/d/1JEbEieVfAr6uvVdpS_M65zxdNi2jj7SK/view?usp=sharing)
+3.	Discrete catch data: Negative binomial regression - [recorded presentation](https://drive.google.com/file/d/10Q6YWLXMB-tuH-bWDCodgAnRCBiqiLOS/view?usp=sharing)
     -	Instructor: Rosie Hartman (DWR)
 4.	Zero-inflated negative binomial regression - [recorded presentation](https://drive.google.com/file/d/1T0LQ7VuQfQkoyaQjc_lKSeOzvtrrVyjj/view?usp=sharing)
     -	Instructor: Rosie Hartman (DWR)
