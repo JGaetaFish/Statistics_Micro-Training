@@ -1,0 +1,326 @@
+station_name,Station_Number,date,Year,Discrete_Oxygen,Temperature
+Calaveras Point,36,11/9/77,1977,7.2,14.6
+Point San Pablo,15,11/10/77,1977,7.6,14.6
+Point San Pablo,15,7/13/78,1978,7.6,17.2
+Calaveras Point,36,9/19/78,1978,5,18.2
+Point San Pablo,15,9/20/78,1978,7.3,18.2
+Point San Pablo,15,11/9/78,1978,7.8,14.9
+Point San Pablo,15,6/15/94,1994,7.6,18.46
+Calaveras Point,36,6/15/94,1994,6.7,19.73
+Sacramento River,649,6/15/94,1994,8.4,20.32
+Point San Pablo,15,7/28/94,1994,7.8,19.17
+Calaveras Point,36,7/28/94,1994,6.3,21.23
+Point San Pablo,15,8/30/94,1994,7.9,19.2
+Calaveras Point,36,8/30/94,1994,6.2,21.7
+Sacramento River,649,8/30/94,1994,8.2,21.22
+Point San Pablo,15,9/27/94,1994,7.4,18.66
+Calaveras Point,36,9/27/94,1994,6.7,20.98
+Sacramento River,649,9/27/94,1994,8.3,20.2
+Point San Pablo,15,10/26/94,1994,8,16.04
+Calaveras Point,36,10/26/94,1994,7.3,16.96
+Sacramento River,649,10/26/94,1994,9,17.03
+Point San Pablo,15,11/29/94,1994,8.6,10.76
+Calaveras Point,36,11/29/94,1994,7.9,10.25
+Point San Pablo,15,6/13/95,1995,7.9,16.88
+Point San Pablo,15,8/16/95,1995,8.2,19.41
+Calaveras Point,36,8/16/95,1995,6.3,22.88
+Point San Pablo,15,9/21/95,1995,7.5,18.15
+Calaveras Point,36,9/21/95,1995,6.7,22.1
+Point San Pablo,15,10/23/95,1995,8.1,16.2
+Sacramento River,649,10/23/95,1995,9.3,17.19
+Calaveras Point,36,10/25/95,1995,7.2,17.82
+Point San Pablo,15,6/12/96,1996,7.5,16.9
+Sacramento River,649,6/12/96,1996,8.3,20.91
+Point San Pablo,15,7/17/96,1996,8,19.45
+Calaveras Point,36,7/17/96,1996,6.1,21.59
+Sacramento River,649,7/17/96,1996,8.6,21.08
+Point San Pablo,15,8/13/96,1996,7.8,19.64
+Calaveras Point,36,8/13/96,1996,5.4,23.92
+Sacramento River,649,8/13/96,1996,8.6,22.52
+Point San Pablo,15,9/11/96,1996,7.6,18.81
+Sacramento River,649,9/11/96,1996,8.5,20.49
+Point San Pablo,15,10/16/96,1996,7.6,17.58
+Calaveras Point,36,10/16/96,1996,6.8,19.29
+Sacramento River,649,10/16/96,1996,8.7,18.8
+Point San Pablo,15,11/13/96,1996,7.6,13.72
+Sacramento River,649,11/13/96,1996,9.3,14.16
+Point San Pablo,15,6/10/97,1997,7.5,18.73
+Calaveras Point,36,6/10/97,1997,6.6,20.39
+Sacramento River,649,6/10/97,1997,8.5,21.16
+Point San Pablo,15,7/15/97,1997,7.9,19.15
+Sacramento River,649,7/15/97,1997,8.6,21.66
+Point San Pablo,15,8/5/97,1997,7.7,20.23
+Calaveras Point,36,8/5/97,1997,5.4,22.84
+Sacramento River,649,8/5/97,1997,8.5,22.36
+Point San Pablo,15,9/9/97,1997,8.8,20.93
+Calaveras Point,36,9/9/97,1997,6.9,22.19
+Sacramento River,649,9/9/97,1997,8.4,21.59
+Point San Pablo,15,10/7/97,1997,7.8,18.37
+Sacramento River,649,10/7/97,1997,8.7,19.61
+Point San Pablo,15,11/6/97,1997,7.7,16.87
+Sacramento River,649,11/6/97,1997,8.9,17.16
+Calaveras Point,36,6/2/98,1998,6.8,17.87
+Point San Pablo,15,6/17/98,1998,8.2,18.74
+Sacramento River,649,6/17/98,1998,8.9,17.91
+Point San Pablo,15,7/21/98,1998,8,18.26
+Sacramento River,649,7/21/98,1998,8.4,23.33
+Point San Pablo,15,8/11/98,1998,7.6,20.14
+Calaveras Point,36,8/11/98,1998,5.9,22.77
+Sacramento River,649,8/11/98,1998,8.1,23.36
+Point San Pablo,15,9/1/98,1998,8.3,19.03
+Calaveras Point,36,9/1/98,1998,7.5,22.39
+Sacramento River,649,9/1/98,1998,8.5,21.61
+Point San Pablo,15,11/10/98,1998,8.4,13.41
+Calaveras Point,36,11/10/98,1998,7.4,14.16
+Sacramento River,649,11/10/98,1998,9.4,13.57
+Point San Pablo,15,8/17/99,1999,7.1,18.16
+Sacramento River,649,8/17/99,1999,7.8,20.8
+Point San Pablo,15,9/14/99,1999,7.2,17.97
+Sacramento River,649,9/14/99,1999,8.4,19.34
+Calaveras Point,36,9/17/99,1999,6.5,19.99
+Point San Pablo,15,10/19/99,1999,7.7,17.56
+Sacramento River,649,10/19/99,1999,8.3,18.68
+Calaveras Point,36,10/21/99,1999,7.2,19.38
+Point San Pablo,15,11/10/99,1999,7.1,14.8
+Sacramento River,649,11/10/99,1999,8.5,16.19
+Calaveras Point,36,11/11/99,1999,6.6,16.44
+Point San Pablo,15,6/13/00,2000,7.3,17.91
+Calaveras Point,36,6/15/00,2000,6.3,22.49
+Point San Pablo,15,7/11/00,2000,7.4,17.58
+Sacramento River,649,7/11/00,2000,8.2,20.52
+Calaveras Point,36,7/13/00,2000,6.3,21.84
+Point San Pablo,15,8/8/00,2000,7,18.33
+Sacramento River,649,8/8/00,2000,8.1,21.49
+Calaveras Point,36,8/10/00,2000,6.8,20.95
+Sacramento River,649,9/5/00,2000,7.3,19.46
+Calaveras Point,36,9/7/00,2000,5.8,20.18
+Point San Pablo,15,10/10/00,2000,7.2,17.5
+Sacramento River,649,10/10/00,2000,8.2,18.35
+Calaveras Point,36,10/12/00,2000,5.6,17.83
+Point San Pablo,15,11/7/00,2000,7.5,14.39
+Sacramento River,649,11/7/00,2000,9,14
+Calaveras Point,36,11/9/00,2000,7.4,14.35
+Sacramento River,649,6/19/01,2001,7.8,22.44
+Calaveras Point,36,6/21/01,2001,5.9,23.26
+Point San Pablo,15,7/17/01,2001,7.8,18.55
+Sacramento River,649,7/17/01,2001,8.3,20.75
+Calaveras Point,36,7/19/01,2001,6.8,21.03
+Sacramento River,649,9/11/01,2001,8.5,20.5
+Point San Pablo,15,10/16/01,2001,7.4,17.52
+Sacramento River,649,10/16/01,2001,8.4,18.78
+Calaveras Point,36,10/18/01,2001,6.2,19.25
+Point San Pablo,15,11/27/01,2001,7.9,13.77
+Sacramento River,649,11/27/01,2001,8.7,13.19
+Point San Pablo,15,6/4/02,2002,8.2,17.95
+Calaveras Point,36,6/4/02,2002,6.6,19.12
+Sacramento River,649,6/4/02,2002,8.3,21.07
+Point San Pablo,15,7/16/02,2002,8.4,18.38
+Calaveras Point,36,7/16/02,2002,7.3,21.27
+Sacramento River,649,7/16/02,2002,8.9,21.96
+Point San Pablo,15,8/20/02,2002,7.5,18.47
+Sacramento River,649,8/20/02,2002,8.4,20
+Point San Pablo,15,9/10/02,2002,7.3,19.12
+Calaveras Point,36,9/10/02,2002,5.7,20.95
+Sacramento River,649,9/10/02,2002,8.1,20.9
+Point San Pablo,15,10/8/02,2002,7.3,18.21
+Calaveras Point,36,10/8/02,2002,5.5,20.85
+Sacramento River,649,10/8/02,2002,7.9,19.36
+Point San Pablo,15,11/13/02,2002,7.9,15.35
+Sacramento River,649,11/13/02,2002,8.6,14.5
+Point San Pablo,15,6/17/03,2003,7,18.23
+Calaveras Point,36,6/17/03,2003,6,20.24
+Point San Pablo,15,7/15/03,2003,6.6,19.78
+Calaveras Point,36,7/15/03,2003,5.1,21.65
+Sacramento River,649,7/15/03,2003,8,22.28
+Point San Pablo,15,8/12/03,2003,6.7,20.27
+Sacramento River,649,8/12/03,2003,8.1,21.15
+Calaveras Point,36,8/27/03,2003,5.9,23.42
+Point San Pablo,15,9/9/03,2003,7.2,18.9
+Sacramento River,649,9/9/03,2003,8.2,20.35
+Calaveras Point,36,9/18/03,2003,6.3,21.7
+Point San Pablo,15,10/15/03,2003,7.4,17.35
+Calaveras Point,36,10/15/03,2003,7.2,18.93
+Sacramento River,649,10/15/03,2003,8.6,18.76
+Calaveras Point,36,11/18/03,2003,7.8,14.97
+Sacramento River,649,11/18/03,2003,9.3,14.16
+Point San Pablo,15,6/22/04,2004,7.5,18.9
+Calaveras Point,36,6/22/04,2004,6.6,20.12
+Sacramento River,649,6/22/04,2004,8.2,20.86
+Point San Pablo,15,7/27/04,2004,7.7,19.4
+Sacramento River,649,7/27/04,2004,8.4,21.98
+Point San Pablo,15,8/24/04,2004,7.8,19.5
+Sacramento River,649,8/24/04,2004,8.4,21.32
+Calaveras Point,36,9/8/04,2004,6.7,24.61
+Point San Pablo,15,9/14/04,2004,8.3,20.27
+Sacramento River,649,9/14/04,2004,8.1,21.65
+Calaveras Point,36,10/8/04,2004,8.4,19.97
+Point San Pablo,15,11/3/04,2004,8.4,15.03
+Calaveras Point,36,11/3/04,2004,7.4,16.08
+Point San Pablo,15,6/21/05,2005,7.5,17.11
+Sacramento River,649,6/21/05,2005,8.4,19.11
+Calaveras Point,36,8/29/05,2005,10.4,22.92
+Calaveras Point,36,9/7/05,2005,6.1,21.32
+Sacramento River,649,9/7/05,2005,8.1,20.87
+Calaveras Point,36,9/26/05,2005,9.1,19.8
+Point San Pablo,15,10/12/05,2005,7.9,16.86
+Sacramento River,649,10/12/05,2005,8.5,17.94
+Calaveras Point,36,10/25/05,2005,7.2,17.58
+Point San Pablo,15,11/8/05,2005,7.9,15.31
+Calaveras Point,36,11/8/05,2005,7.4,16.04
+Sacramento River,649,11/8/05,2005,9.1,15.38
+Calaveras Point,36,11/22/05,2005,7.9,15.57
+Calaveras Point,36,7/11/06,2006,6.4,21.78
+Point San Pablo,15,7/17/06,2006,8.2,19.51
+Calaveras Point,36,8/2/06,2006,6.9,22.53
+Point San Pablo,15,8/15/06,2006,7.1,19.26
+Calaveras Point,36,8/15/06,2006,6.3,21.98
+Sacramento River,649,8/15/06,2006,8.4,21.11
+Calaveras Point,36,8/31/06,2006,6.6,21.37
+Point San Pablo,15,9/12/06,2006,7.4,18.16
+Calaveras Point,36,9/12/06,2006,6.4,20.98
+Sacramento River,649,9/12/06,2006,8.2,20.72
+Calaveras Point,36,9/29/06,2006,6.6,19.96
+Sacramento River,649,10/17/06,2006,8.7,16.76
+Point San Pablo,15,11/14/06,2006,7.9,15.14
+Calaveras Point,36,11/14/06,2006,7.6,14.7
+Sacramento River,649,11/14/06,2006,8.9,14.53
+Calaveras Point,36,6/21/07,2007,6,20.36
+Point San Pablo,15,7/19/07,2007,7.4,20.16
+Calaveras Point,36,7/23/07,2007,6.7,23.44
+Calaveras Point,36,8/22/07,2007,6.6,22.71
+Point San Pablo,15,9/11/07,2007,7,19.45
+Calaveras Point,36,9/11/07,2007,5.4,20.53
+Sacramento River,649,9/11/07,2007,8.3,20.76
+Calaveras Point,36,10/19/07,2007,7.5,17.14
+Point San Pablo,15,10/23/07,2007,7.8,15.81
+Sacramento River,649,10/23/07,2007,8.9,16.54
+Point San Pablo,15,11/14/07,2007,7.8,14.89
+Calaveras Point,36,11/14/07,2007,7.8,15.74
+Sacramento River,649,11/14/07,2007,8.9,15.77
+Point San Pablo,15,6/17/08,2008,7.7,16.88
+Sacramento River,649,6/17/08,2008,8.4,19.82
+Calaveras Point,36,7/10/08,2008,5,23.55
+Point San Pablo,15,7/15/08,2008,7.3,19.25
+Sacramento River,649,7/15/08,2008,8,21.43
+Calaveras Point,36,8/12/08,2008,8,21.66
+Point San Pablo,15,8/19/08,2008,7.1,19.21
+Calaveras Point,36,8/19/08,2008,5.3,21.91
+Sacramento River,649,8/19/08,2008,8.4,21.07
+Calaveras Point,36,9/9/08,2008,7.3,23.14
+Point San Pablo,15,9/16/08,2008,7.1,19.24
+Sacramento River,649,9/16/08,2008,8.4,19.42
+Calaveras Point,36,10/7/08,2008,7.4,20.34
+Point San Pablo,15,10/15/08,2008,7.3,16.07
+Calaveras Point,36,10/15/08,2008,6.2,16.62
+Sacramento River,649,10/15/08,2008,8.7,16.84
+Calaveras Point,36,11/5/08,2008,7.3,15.14
+Point San Pablo,15,11/18/08,2008,8,15.24
+Calaveras Point,36,11/18/08,2008,6.5,16.65
+Sacramento River,649,11/18/08,2008,8.4,15.81
+Calaveras Point,36,6/16/09,2009,6.7,18.98
+Point San Pablo,15,6/23/09,2009,7.6,19.42
+Sacramento River,649,6/23/09,2009,8.3,20.66
+Calaveras Point,36,7/15/09,2009,6.1,22.27
+Point San Pablo,15,7/21/09,2009,7.4,18.54
+Sacramento River,649,7/21/09,2009,8.2,21.75
+Point San Pablo,15,9/22/09,2009,6.9,19.43
+Calaveras Point,36,9/22/09,2009,5.8,22.8
+Sacramento River,649,9/22/09,2009,7.6,22.15
+Calaveras Point,36,9/28/09,2009,6.2,22.37
+Point San Pablo,15,10/29/09,2009,7.8,14.88
+Sacramento River,649,10/29/09,2009,9,15.62
+Point San Pablo,15,11/18/09,2009,7.6,13.58
+Sacramento River,649,11/18/09,2009,9,14.02
+Calaveras Point,36,6/7/10,2010,6.5,22.13
+Point San Pablo,15,6/15/10,2010,7.7,18.66
+Sacramento River,649,6/15/10,2010,8.5,19.47
+Calaveras Point,36,7/6/10,2010,6.8,21.62
+Point San Pablo,15,7/13/10,2010,7.5,18.76
+Sacramento River,649,7/13/10,2010,8.7,20.32
+Calaveras Point,36,8/3/10,2010,6.6,21.03
+Point San Pablo,15,8/17/10,2010,7.8,18.39
+Calaveras Point,36,8/17/10,2010,6.6,20.08
+Sacramento River,649,8/17/10,2010,8.7,19.84
+Calaveras Point,36,9/1/10,2010,7.1,21.27
+Point San Pablo,15,9/14/10,2010,7.6,17.95
+Calaveras Point,36,9/14/10,2010,6.3,20.21
+Sacramento River,649,9/14/10,2010,8.7,20.04
+Calaveras Point,36,10/1/10,2010,6.5,22.12
+Calaveras Point,36,10/15/10,2010,6.5,21.06
+Point San Pablo,15,10/26/10,2010,7.6,15.65
+Calaveras Point,36,10/26/10,2010,7.1,16.73
+Sacramento River,649,10/26/10,2010,8.6,17.17
+Calaveras Point,36,11/15/10,2010,7.2,15.43
+Point San Pablo,15,6/14/11,2011,8.1,17.33
+Sacramento River,649,6/14/11,2011,8.8,18.91
+Calaveras Point,36,6/24/11,2011,6.7,21.76
+Point San Pablo,15,7/12/11,2011,8,17.13
+Sacramento River,649,7/12/11,2011,8.3,21.4
+Calaveras Point,36,7/22/11,2011,6.6,22.02
+Point San Pablo,15,8/16/11,2011,7.7,18.83
+Sacramento River,649,8/16/11,2011,8.4,21.85
+Calaveras Point,36,8/23/11,2011,6.7,21.56
+Calaveras Point,36,9/20/11,2011,6.8,21.87
+Calaveras Point,36,10/6/11,2011,6.7,18.31
+Point San Pablo,15,10/18/11,2011,8.4,18.43
+Calaveras Point,36,10/18/11,2011,6.6,21.07
+Sacramento River,649,10/18/11,2011,9.4,18.79
+Calaveras Point,36,11/4/11,2011,7,16.35
+Point San Pablo,15,11/15/11,2011,7.9,13.72
+Calaveras Point,36,11/15/11,2011,7.5,14.37
+Sacramento River,649,11/15/11,2011,9.3,13.97
+Calaveras Point,36,6/12/12,2012,6.6,19.54
+Point San Pablo,15,6/19/12,2012,7.7,18.85
+Sacramento River,649,6/19/12,2012,8.2,21.3
+Calaveras Point,36,7/11/12,2012,6.3,20.97
+Point San Pablo,15,7/17/12,2012,7.4,17.79
+Sacramento River,649,7/17/12,2012,8.2,21.52
+Point San Pablo,15,8/7/12,2012,7.6,18.98
+Calaveras Point,36,8/7/12,2012,6.2,21.17
+Sacramento River,649,8/7/12,2012,8.6,21
+Calaveras Point,36,8/27/12,2012,6.1,20.3
+Calaveras Point,36,9/7/12,2012,6.5,20.06
+Sacramento River,649,9/11/12,2012,8.5,19.75
+Point San Pablo,15,10/3/12,2012,7.3,17.87
+Calaveras Point,36,10/3/12,2012,6.3,21.35
+Sacramento River,649,10/3/12,2012,8.2,19.79
+Calaveras Point,36,10/10/12,2012,6.9,19.29
+Point San Pablo,15,11/6/12,2012,7.9,16.93
+Calaveras Point,36,11/6/12,2012,6.7,18.09
+Sacramento River,649,11/6/12,2012,7.6,17.13
+Calaveras Point,36,6/17/13,2013,5.9,21.34
+Calaveras Point,36,7/15/13,2013,6.3,21.5
+Point San Pablo,15,7/23/13,2013,7.5,19.28
+Sacramento River,649,7/23/13,2013,8.4,21.44
+Point San Pablo,15,8/28/13,2013,7.2,19.4
+Calaveras Point,36,8/28/13,2013,6.3,22.7
+Sacramento River,649,8/28/13,2013,8.2,21.65
+Point San Pablo,15,9/26/13,2013,7.5,18.2
+Calaveras Point,36,9/26/13,2013,7,18.59
+Sacramento River,649,9/26/13,2013,8.1,19.88
+Point San Pablo,15,10/25/13,2013,7.3,15.54
+Sacramento River,649,10/25/13,2013,9,16.63
+Point San Pablo,15,11/19/13,2013,7.5,13.77
+Sacramento River,649,11/19/13,2013,8.9,14.14
+Calaveras Point,36,11/25/13,2013,7.4,13.28
+Point San Pablo,15,6/10/14,2014,7.3,17.32
+Sacramento River,649,6/10/14,2014,8.2,21.43
+Calaveras Point,36,7/8/14,2014,6,22.19
+Point San Pablo,15,7/15/14,2014,7.1,19.91
+Sacramento River,649,7/15/14,2014,8,22.08
+Calaveras Point,36,8/4/14,2014,5.9,22.59
+Point San Pablo,15,8/12/14,2014,7,19.7
+Sacramento River,649,8/12/14,2014,8.1,22.03
+Calaveras Point,36,9/3/14,2014,6.1,22.81
+Point San Pablo,15,9/16/14,2014,7.1,20.1
+Calaveras Point,36,9/16/14,2014,5.9,21.97
+Sacramento River,649,9/16/14,2014,8.4,20.9
+Point San Pablo,15,10/15/14,2014,7.2,18.61
+Calaveras Point,36,10/15/14,2014,6.3,20.52
+Sacramento River,649,10/15/14,2014,8.1,19.98
+Calaveras Point,36,11/3/14,2014,6.8,17.1
+Point San Pablo,15,11/18/14,2014,7.5,15.5
+Calaveras Point,36,11/18/14,2014,6.8,15.4
+Sacramento River,649,11/18/14,2014,8.6,15.76
+Sacramento River,649,7/21/15,2015,8,22.43
+Calaveras Point,36,7/23/15,2015,5.5,22.45
